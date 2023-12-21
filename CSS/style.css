@@ -1,0 +1,328 @@
+* {
+    outline: 1px solid tomato-;
+}
+
+:root {
+    --mc: #09847F;
+    /*변수를 선언해서 단체로 바꿔줄 수 있음*/
+    --wc: #ffffff;
+    --bc: #333333;
+    --fc: #202123;
+}
+
+.header {
+    height: 100px;
+}
+
+.header .header_wrap h1 {
+    align-items: center;
+}
+
+.header .header_wrap .top_header {
+    display: flex;
+    padding: 15px 0 15px 0;
+    justify-content: space-between;
+}
+
+
+.header .header_wrap .top_header .utill {
+    display: flex;
+    gap: 30px;
+}
+
+.header .header_wrap .top_header .icon {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.header .header_wrap .top_header .member {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .header_wrap .top_header .member li {
+    position: relative;
+}
+
+.header .header_wrap .top_header .member>li~li::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 10px;
+
+    background: #ddd;
+
+}
+
+.header .bottom_header .gnb ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header .bottom_header .gnb_box {
+    display: flex;
+    gap: 20px;
+}
+
+.header .bottom_header .gnb ul li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header .bottom_header .gnb .sub_menu {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+/* ---------------------------main_visual----------------------------------------------------- */
+
+.main_slide .itm {
+    position: relative;
+    height: 600px;
+}
+
+.main_slide .itm01 {
+    background: url(../IMAGES/main_Slide01.jpg)no-repeat center center/cover;
+}
+
+.main_slide .itm02 {
+    background: url(../IMAGES/main_Slide02.jpg)no-repeat center center/cover;
+}
+
+.main_slide .itm03 {
+    background: url(../IMAGES/main_Slide03.jpg)no-repeat center center/cover;
+}
+
+.main_slide .itm04 {
+    background: url(../IMAGES/main_Slide04.jpg)no-repeat center center/cover;
+}
+
+.main_slide .itm05 {
+    background: url(../IMAGES/main_Slide05.jpg)no-repeat center center/cover;
+}
+
+.main_visual .main_slide .slogan {
+    position: absolute;
+    top: 280px;
+    left: 420px;
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .main_slide .slogan {
+    display: block;
+
+    color: #ffffff;
+    margin: 0 0 80px 0;
+}
+
+.main_visual .main_slide .slogan strong {
+    display: block;
+    font-size: 48px;
+    margin: 0 0 40px 0;
+    line-height: 1.2;
+}
+
+.main_visual .main_slide .slogan p {
+    font-size: 18px;
+
+}
+
+.main_slide .itm04 .slogan strong,
+.main_slide .itm05 .slogan strong {
+    color: #000;
+}
+
+
+.main_slide .itm04 .slogan p,
+.main_slide .itm05 .slogan p {
+    font-weight: 500;
+    color: #333333;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    top: 67%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #ffffff;
+    /* border: 1px solid #fff; */
+    background: rgba(146, 143, 143, 0.6);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.main_visual .arrows .left {
+    margin-right: 20px;
+}
+
+.main_visual .arrows::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 30px;
+    background: #d9d9d9;
+}
+
+.main_visual .num {
+    position: absolute;
+    top: 150px;
+    right: 320px;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main_visual .num span {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.main_visual .num strong {
+    color: #888;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* -------------------------icon_box------------------------------------ */
+
+.icon_content {
+    padding: 50px 0;
+}
+
+.icon_content .inner .icon_box ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_content .inner .icon_box ul li {
+    text-align: center;
+}
+
+/* ------------------------------sub_banner---------------------------------------- */
+.sub_banner {
+    padding: 50px;
+}
+
+.sub_banner .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.sub_banner .inner figure img {
+    border-radius: 20px;
+}
+
+.sub_banner .inner .desc {
+    position: absolute;
+    top: 50%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+}
+
+.sub_banner .inner .desc strong {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.sub_banner .inner .desc p {
+    font-weight: 500;
+    color: #fff;
+}
+
+.sub_banner .inner .desc i {
+    font-size: 14px;
+}
+
+/* ------------------inner_box--------------------------------- */
+
+.inner_box {
+    padding: 50px 0 100px 0;
+}
+
+.inner_box .title h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 14px 0;
+}
+
+.inner_box .title p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 18px 0;
+}
+
+.inner_box .inner .img_slide {
+    display: flex;
+    gap: 30px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+
+.inner_box .inner .img_slide figure {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    margin: 0 30px 0 0;
+    border-radius: 20px;
+}
+
+.inner_box .inner .img_slide figure img {
+    border-radius: 10px;
+    margin: 0 0 14px 0;
+}
+
+.inner_box .inner .img_slide figure p {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 5px;
+}
+
+.inner_box .inner .img_slide figure span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 0 0 5px;
+}
+
+
+
+/* ------------------------main_content--------------------------------------- */
+
+.main_content {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.main_content .title h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 14px 0;
+}
+
+.main_content .title p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 18px 0;
+}
