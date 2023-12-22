@@ -448,6 +448,16 @@
     padding: 100px 0;
 }
 
+.main_review .title {
+    position: relative;
+}
+
+.main_review .title a {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
 .main_review .title h2 {
     font-size: 28px;
     font-weight: 600;
@@ -564,8 +574,8 @@
     position: absolute;
     display: flex;
     gap: 20px;
-    top: 200px;
-    right: 400px;
+    top: 160px;
+    right: 40px;
 }
 
 .footer .ft_banner p {
