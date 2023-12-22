@@ -7,6 +7,7 @@ $(function () {
         dots: false,
         fade: true,
     });
+    
     $('.img_slide').slick({
         arrows: false,
         autoplay: false,
